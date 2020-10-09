@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GZB03J1HZEJIPcCC4kgPZP7nnCIEFaeQVdVQC+rfEmrf97r3lRQVLcIXl2/Ke7cS9lEbwUe2y0UfU+53ZhGwCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\crodriquez\\Downloads\\Azure_Event_Grid_Viewer\\viewer\\viewer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crodriquez\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
