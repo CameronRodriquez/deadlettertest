@@ -61,7 +61,7 @@ namespace viewer.Controllers
         [HttpPost]
         public async Task<IActionResult> Post()
         {
-            System.Threading.Thread.Sleep(120000);
+            System.Threading.Thread.Sleep(600000);
             return Ok();
         }
         #endregion
