@@ -61,7 +61,8 @@ namespace viewer.Controllers
         [HttpPost]
         public async Task<IActionResult> Post()
         {
-            return BadRequest();
+            return Ok();
+            //return BadRequest();
         }
         #endregion
 
