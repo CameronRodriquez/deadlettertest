@@ -61,32 +61,7 @@ namespace viewer.Controllers
         [HttpPost]
         public async Task<IActionResult> Post()
         {
-            using (var reader = new StreamReader(Request.Body, Encoding.UTF8))
-            {
-                System.Threading.Thread.Sleep(600000);
-                var jsonContent = await reader.ReadToEndAsync();
-
-                // Check the event type.
-                // Return the validation code if it's 
-                // a subscription validation request. 
-                if (EventTypeSubcriptionValidation)
-                {
-                    return await HandleValidation(jsonContent);
-                }
-                else if (EventTypeNotification)
-                {
-                    // Check to see if this is passed in using
-                    // the CloudEvents schema
-                    if (IsCloudEvent(jsonContent))
-                    {
-                        return await HandleCloudEvent(jsonContent);
-                    }
-
-                    return await HandleGridEvents(jsonContent);
-                }
-
-                return BadRequest();                
-            }
+            return BadRequest();
         }
         #endregion
 
